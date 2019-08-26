@@ -1,2 +1,6 @@
-Aws eksctl
+Create and Delete EKS cluster.
 eksctl create cluster --name=demo-eks-cluster --nodes=3 --node-type m5.large --region=us-east-1
+eksctl delete cluster demo-eks-cluster
+
+eksctl get nodegroups --cluster=demo-eks-cluster
+eksctl scale nodegroup --cluster=demo-eks-cluster --nodes=5 ng-5db2440c
