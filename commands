@@ -1,0 +1,2 @@
+Aws eksctl
+eksctl create cluster --name=demo-eks-cluster --nodes=3 --node-type m5.large --region=us-east-1
